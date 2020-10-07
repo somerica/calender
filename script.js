@@ -1,6 +1,15 @@
 $(document).ready(function() {
     console.log("Hello World");
-$("#hour-9").val(localStorage.getItem("9"))
+
+    $("#hour-9").val(localStorage.getItem("9"))
+    $("#hour-9").val(localStorage.getItem("10"))
+    $("#hour-9").val(localStorage.getItem("11"))
+    $("#hour-9").val(localStorage.getItem("12"))
+    $("#hour-9").val(localStorage.getItem("13"))
+    $("#hour-9").val(localStorage.getItem("14"))
+    $("#hour-9").val(localStorage.getItem("15"))
+    $("#hour-9").val(localStorage.getItem("16"))
+    $("#hour-9").val(localStorage.getItem("17"))
     
     
   
