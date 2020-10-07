@@ -27,7 +27,7 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
-      <div class="displayMoment"></div>
+      <div id="displayMoment"></div>
 
     </header>
     <div class="container coi-sm-4 col-md -col-lg-4 mt-5">
@@ -35,17 +35,25 @@
         <h3 class="card-header" id="dayAndTime">Day and Time</h3>
         <section  id="calendar">
           
-            <ul class="list-group">
-              <li class="list-group-item">9am</li>
-              <li class="list-group-item">10am</li>
-              <li class="list-group-item">11am</li>
-              <li class="list-group-item">12pm</li>
-              <li class="list-group-item">1pm</li>
-              <li class="list-group-item">2pm</li>
-              <li class="list-group-item">3pm</li>  
-              <li class="list-group-item">4pm</li>
-              <li class="list-group-item">5pm</li>
-            </ul>
+          <div class="row">
+            <p class="col-2">9am</p>
+            <input class="col-8"  id="hour-9">
+            <button class="col-2 saveButton"  id="9"> Save</button>
+          </div>
+
+          <div class="row">
+           <p class="col-2">10am</p>
+           <input class= "col-8"  id="hour-10">
+           <button class="col-2 save button" id="10">Save</button>
+          </div>
+          <div class="row">
+            <p class="col-2">11am</p>
+            <input class="col-8" id="hour-11">
+            <button class="col-2 save button" id="11">Save</button>
+          </div>
+            
+
+            
           
           <tbody id="calendar-body"></tbody>
         </section>
@@ -57,8 +65,8 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="script.js"></script>
-  <script type="text/javascript">q
+    <script src="script.js"></script>
+    <script type="text/javascript"></script>
 
     
   </body>

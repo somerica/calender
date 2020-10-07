@@ -1,14 +1,13 @@
 $(document).ready(function() {
     console.log("Hello World");
-
+$("#hour-9").val(localStorage.getItem("9"))
     
-    var currentMonth=today.getMonth();
-    var currentYear=today.getFullYear();
+    
+  
     var day=moment().format('dddd');
     var days=moment().add(3, 'days').calendar();
-    console.log(today);
     var NowMoment = moment();
-    var eDisplayMoment = document.getElementById('displayMoment');
+    
       
     var hours=[
     "9am",
@@ -31,12 +30,19 @@ $(document).ready(function() {
   
   
   var eDisplayMoment = document.getElementById('displayMoment');
+  console.log(eDisplayMoment)
   eDisplayMoment.innerHTML = NowMoment;
+
+  $(".saveButton").on("click" ,function(){
+    var text=($(this)[0].previousElementSibling.value)
+    var hour=$(this).attr("id")
+    localStorage.setItem(hour,text)
+  })
   
   
-  var eDisplayDate = document.getElementById('displayJsDate');
-  eDisplayDate.innerHTML = NowDate;
-})();
+
+  
+});
 
 
 
